@@ -2,6 +2,9 @@
 
 ## notes-app is console application used for managing notes.
 
+## Requirements
+- Node is runtime environment used to run this javascript project and Node should be installed on local pc to run this project.
+
 ## Tools
 ### npm
 - npm stands for node package manager used for downloading dependencies required for the development. Below
@@ -54,3 +57,22 @@
 #### readNote(title)
 - It will loads all notes using loadNotes() function. Then checks if there exits any note which has title equals to current notes' title, if yes,then 
   prints title and body of the note in styled text. If no, print error message 'Note not exists!'.
+
+## Usage
+- Four operation can be done using this project i.e. Adding a note, Removing, Listing all notes and Reading a specific note.
+- To add a note,
+  ```sh
+  node app.js add --title="<title-name>" --body="<body>"
+  ```
+- To remove a note
+  ```sh
+  node app.js remove --title="<title-name>"
+  ```
+- To list all the notes
+  ```sh
+  node app.js list
+  ```
+- To read a specific note,
+  ```sh
+  node app.js read --title="<title-name>"
+  ```
